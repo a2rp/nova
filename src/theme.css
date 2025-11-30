@@ -1,0 +1,55 @@
+/* src/theme.css */
+
+/* ===== Core dark theme (default) ===== */
+:root {
+    /* Base surfaces */
+    --color-bg: #000000; /* main page background – pure black */
+    --color-bg-elevated: #0a0a0a; /* slightly lifted background */
+    --color-surface: #111111; /* cards / panels */
+    --color-surface-soft: #181818; /* softer hover surfaces */
+
+    /* Text */
+    --color-heading: #ffffff; /* headings – bright white */
+    --color-text: #b3b3b3; /* body text – medium gray */
+    --color-text-muted: #808080; /* helper / caption text */
+
+    /* Borders & outlines */
+    --color-border: #333333; /* subtle separators */
+
+    /* Links */
+    --color-link: #e0e0e0; /* default link color */
+    --color-link-hover: #ffffff; /* hover link color */
+
+    /* Shadows */
+    --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.6);
+
+    /* Scrollbar */
+    --scrollbar-thumb: #555555;
+}
+
+/* ===== Light theme ===== */
+html[data-theme="light"] {
+    /* Base surfaces */
+    --color-bg: #f5f5f5; /* page background – light gray */
+    --color-bg-elevated: #fdfdfd; /* slightly lifted */
+    --color-surface: #ffffff; /* cards / panels */
+    --color-surface-soft: #f0f0f0; /* hover surfaces */
+
+    /* Text */
+    --color-heading: #111111; /* near-black headings */
+    --color-text: #3a3a3a; /* body text – dark gray */
+    --color-text-muted: #888888; /* helper text */
+
+    /* Borders */
+    --color-border: #dddddd;
+
+    /* Links */
+    --color-link: #111111;
+    --color-link-hover: #000000;
+
+    /* Shadows */
+    --shadow-soft: 0 16px 40px rgba(0, 0, 0, 0.08);
+
+    /* Scrollbar */
+    --scrollbar-thumb: #b3b3b3;
+}

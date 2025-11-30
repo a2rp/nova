@@ -1,0 +1,117 @@
+/* src/index.css */
+@import "./theme.css";
+
+/* ===== Reset ===== */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+/* ===== Base body / typography ===== */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+/* Global links */
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--color-link-hover);
+}
+
+/* Scrollbar – simple, same everywhere */
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 999px;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Antonio", sans-serif;
+    color: var(--color-heading);
+}
+
+/* Form elements */
+
+select {
+    font-family: inherit;
+    outline: none;
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+}
+
+/* ===== Global autofill fix for all inputs / selects / textareas ===== */
+
+input,
+textarea,
+select {
+    background-color: transparent;
+    color: var(--color-text);
+}
+
+/* Chrome / Edge / etc. autofill background ko theme ke hisaab se rakho */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--color-text);
+    box-shadow: 0 0 0px 1000px var(--color-surface) inset;
+    transition: background-color 9999s ease-out, color 9999s ease-out;
+    caret-color: var(--color-text);
+}
+
+/* Generic surface helpers (use anywhere in JSX) */
+
+.surface-card {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
+    color: inherit;
+}
+
+.surface-soft {
+    background-color: var(--color-surface-soft);
+    border: 1px solid var(--color-border);
+    color: inherit;
+}
