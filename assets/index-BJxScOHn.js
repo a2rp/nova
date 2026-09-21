@@ -1,4 +1,4 @@
-import{d as t,j as e,H as l,v as n,I as d,J as c,K as p,L as x}from"./index-DNs2t0HA.js";const r={Wrap:t.div`
+import{d as t,j as e,H as l,v as n,I as d,J as c,K as p,L as x}from"./index-D1oTqU7x.js";const r={Wrap:t.div`
         min-height: calc(100vh - 70px);
         padding: 24px 24px 32px;
         color: var(--color-text);

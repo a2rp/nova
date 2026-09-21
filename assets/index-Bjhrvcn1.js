@@ -1,4 +1,4 @@
-import{d as i,G as n,r as l,j as e,B as c,k as d,C as p,D as x,E as h}from"./index-DNs2t0HA.js";const m={Wrap:i.div`
+import{d as i,G as n,r as l,j as e,B as c,k as d,C as p,D as x,E as h}from"./index-D1oTqU7x.js";const m={Wrap:i.div`
         min-height: calc(100vh - 70px);
         display: grid;
         grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
