@@ -1,4 +1,4 @@
-import{d as h,r as o,j as e,B as m,F as u,p as f,k as g,C as l,D as n,E as t}from"./index-D1oTqU7x.js";const b={Wrap:h.div`
+import{d as h,r as o,j as e,B as m,F as u,p as f,k as g,C as l,D as n,E as t}from"./index-COFvMeSN.js";const b={Wrap:h.div`
         display: flex;
         height: 100vh;
         color: var(--color-text);

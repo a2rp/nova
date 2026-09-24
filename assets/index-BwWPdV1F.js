@@ -1,4 +1,4 @@
-import{d as je,r as a,j as r}from"./index-D1oTqU7x.js";const ye={Wrap:je.div`
+import{d as je,r as a,j as r}from"./index-COFvMeSN.js";const ye={Wrap:je.div`
         padding-inline: 32px;
         padding-top: 24px;
         padding-bottom: 32px;

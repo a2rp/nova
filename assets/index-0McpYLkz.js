@@ -1,1 +1,0 @@
-import{d as e,j as r}from"./index-D1oTqU7x.js";import s from"./index-iV40r-wD.js";const t={Wrapper:e.main``},m=()=>r.jsx(r.Fragment,{children:r.jsxs(t.Wrapper,{children:["ome",r.jsx(s,{})]})});export{m as default};
