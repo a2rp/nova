@@ -1,26 +1,21 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-/**
- * Scrolls to top on route change.
- * - If URL has a hash (#section), scrolls that element into view.
- * - Default behavior is "auto"; pass behavior="smooth" to animate.
- */
-export default function ScrollToTop({ behavior = "auto", children = null }) {
+export default function ScrollToTop({ behavior = "auto" }) {
     const { pathname, hash } = useLocation();
 
     useEffect(() => {
-        // Handle in-page anchors if present
+        const node = document.querySelector(".routesWrapper");
         if (hash) {
-            const el = document.querySelector(hash);
-            if (el) {
-                el.scrollIntoView({ behavior, block: "start" });
+            const element = document.querySelector(hash);
+            if (element) {
+                element.scrollIntoView({ behavior, block: "start" });
                 return;
             }
         }
-        // Fallback: go to top
-        window.scrollTo({ top: 0, left: 0, behavior });
+        if (node?.scrollTo) node.scrollTo({ top: 0, left: 0, behavior });
+        else window.scrollTo({ top: 0, left: 0, behavior });
     }, [pathname, hash, behavior]);
 
-    return children;
+    return null;
 }

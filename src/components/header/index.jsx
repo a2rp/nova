@@ -1,7 +1,6 @@
 // src/components/header/index.jsx
 import { useEffect, useRef, useState } from "react";
 import { Styled } from "./styled";
-import logo from "/images/logo.png";
 import { RiMenuFold4Fill } from "react-icons/ri";
 import {
     TbSearch,
@@ -103,7 +102,7 @@ const Header = ({ onOpenSideMenu }) => {
                 </div>
                 <div className="brandLogoNameWrapper">
                     <div className="logoWrapper">
-                        <img src={logo} alt="Nova logo" />
+                        <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Nova logo" />
                     </div>
                     <div className="brandName">Nova</div>
                 </div>

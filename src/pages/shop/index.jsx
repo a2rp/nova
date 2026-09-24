@@ -1,6 +1,7 @@
 // src/pages/shop/index.jsx
 import React, { useCallback, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Styled } from "./styled";
 
@@ -414,7 +415,7 @@ const Shop = () => {
                     >
                         <h1>Calm, configurable shopping surface.</h1>
                         <p className="subtitle">
-                            Browse a catalog built like a workspace — with search,
+                            Browse a catalog built like a workspace  -  with search,
                             filters, and sorting that stay out of your way.
                         </p>
                     </motion.div>

@@ -235,7 +235,7 @@ export default function About() {
                         <p className="bio">
                             I build modern full-stack apps with clean architecture,
                             premium UI/UX, and production-ready structure.
-                            I enjoy creative coding, AI, robotics, and futuristic tech.
+                            I enjoy creative coding, advanced systems, robotics, and futuristic tech.
                             <br /><br />
                             Right now I’m focused on building high-impact MERN systems,
                             strong portfolios, and scalable products that feel smooth,
@@ -293,7 +293,7 @@ export default function About() {
                         </div>
 
                         <div className="note text-muted">
-                            © {year} Ashish Ranjan — building things that feel solid,
+                            © {year} Ashish Ranjan  -  building things that feel solid,
                             calm, and useful.
                         </div>
                     </div>

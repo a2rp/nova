@@ -20,7 +20,7 @@ export default function AppRoutes() {
     const location = useLocation();
 
     return (
-        <Suspense
+        <Suspense key={location.pathname}
             fallback={
                 <Box
                     sx={{
