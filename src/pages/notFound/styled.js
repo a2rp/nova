@@ -73,7 +73,41 @@ export const Styled = {
 
             .btn-primary,
             .btn-ghost {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
                 height: 44px;
+                padding: 0 16px;
+                border: 1px solid var(--color-border);
+                border-radius: var(--radius-lg);
+                font: inherit;
+                text-decoration: none;
+                cursor: pointer;
+                transition: background var(--transition-med), color var(--transition-med), border-color var(--transition-med);
+            }
+
+            .btn-primary {
+                background: var(--color-heading);
+                color: var(--color-bg);
+                border-color: var(--color-heading);
+            }
+
+            .btn-primary:hover,
+            .btn-primary:focus-visible {
+                background: var(--color-text);
+                color: var(--color-bg);
+            }
+
+            .btn-ghost {
+                background: var(--color-surface);
+                color: var(--color-heading);
+            }
+
+            .btn-ghost:hover,
+            .btn-ghost:focus-visible {
+                background: var(--color-surface-soft);
+                border-color: var(--color-heading);
             }
         }
 

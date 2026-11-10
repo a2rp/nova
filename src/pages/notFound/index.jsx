@@ -1,17 +1,18 @@
 import React, { useMemo } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Styled } from "./styled";
 
 import {
     TbError404,
     TbArrowLeft,
     TbHome,
-    TbShoppingBag,
-    TbSearch,
+    TbUser,
+    TbSettings,
 } from "react-icons/tb";
 
 export default function NotFound() {
     const location = useLocation();
+    const navigate = useNavigate();
 
     const suggestions = useMemo(
         () => [
@@ -22,16 +23,16 @@ export default function NotFound() {
                 desc: "Back to the main dashboard.",
             },
             {
-                label: "Browse Shop",
-                to: "/shop",
-                icon: <TbShoppingBag size={18} />,
-                desc: "Explore all products.",
+                label: "View Users",
+                to: "/users",
+                icon: <TbUser size={18} />,
+                desc: "Open the user management screen.",
             },
             {
-                label: "Search Products",
-                to: "/shop?focus=search",
-                icon: <TbSearch size={18} />,
-                desc: "Find items quickly.",
+                label: "Account Settings",
+                to: "/account",
+                icon: <TbSettings size={18} />,
+                desc: "Review profile and account preferences.",
             },
         ],
         []
@@ -60,10 +61,10 @@ export default function NotFound() {
                         Back to Home
                     </NavLink>
 
-                    <NavLink to={-1} className="btn-ghost">
+                    <button type="button" className="btn-ghost" onClick={() => navigate(-1)}>
                         <TbArrowLeft size={18} />
                         Go Back
-                    </NavLink>
+                    </button>
                 </div>
 
                 <div className="divider" />
